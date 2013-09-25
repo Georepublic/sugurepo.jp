@@ -1,3 +1,4 @@
 name: 知らせて.jp
 markdown: redcarpet
 pygments: true
+baseurl: ''
