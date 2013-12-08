@@ -1,4 +1,8 @@
 name: 知らせて.jp
-markdown: redcarpet
-pygments: true
-baseurl: ''
+permalink: /:categories/:title
+relative_permalinks: false
+
+# Prose settings
+prose:
+  rooturl: '_posts'
+
