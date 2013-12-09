@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
 	
 	$('button.subscribe').bind('click', function (evt) {
 		$.post(
-			'http://news.georepublic.info/subscribe', 
+			$(this.form)[0].action, 
 			$(this.form).serialize(), 
 			function (response) {
 				if (true) {
@@ -32,7 +32,7 @@ jQuery(document).ready(function() {
 
 	$('button.unsubscribe').bind('click', function (evt) {
 		$.post(
-			'http://news.georepublic.info/unsubscribe', 
+			$(this.form)[0].action, 
 			$(this.form).serialize(), 
 			function (response) {
 				if (true) {
