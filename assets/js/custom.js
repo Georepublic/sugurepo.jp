@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
 	
 	$('button.subscribe').bind('click', function (evt) {
 		$.post(
-			$(this.form)[0].action, 
+			'http://news.georepublic.info/subscribe', 
 			$(this.form).serialize(), 
 			function (response) {
 				if (true) {
@@ -32,21 +32,23 @@ jQuery(document).ready(function() {
 
 	$('button.unsubscribe').bind('click', function (evt) {
 		$.post(
-			$(this.form)[0].action, 
+			'http://news.georepublic.info/unsubscribe', 
 			$(this.form).serialize(), 
 			function (response) {
 				if (true) {
 					switch (response) {
 						case 'Some fields are missing.':
+							$('.alert-danger').html("Error: Some fields are missing.").show();
 							alert("Some fields are missing.");
 							break;
 
 						case 'Invalid email address.':
-							alert("Invalid email address.");
+							$('.alert-danger').html("Error: Invalid email address.").show();
 							break;
 
 						default:
-							alert("You're unsubscribed!");
+							$('.alert-danger').hide();
+							$('.alert-success').show();
 							break;
 					}
 				}
