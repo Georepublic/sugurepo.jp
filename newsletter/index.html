@@ -1,6 +1,76 @@
 ---
 layout: default
-title: Newsletter subscription
+title: ニュースレター
 ---
 
+<div id="sign_in2" style="margin-top:20px;">
+    <div class="container">
+        <div class="row login">
 
+            <div class="alert alert-success" style="display:none;">
+              <strong>Success!</strong> <span></span>
+            </div>
+
+            <div class="alert alert-danger" style="display:none;">
+              <strong>Warning!</strong> <span></span>
+            </div>
+
+            <div class="col-sm-6 left_box">
+                <h4>ニュースレター</h4>
+
+                <div class="perk_box">
+                    <div class="perk">
+                        <span class="icos ico3"></span>
+                        <p><strong>Subscribe to our newsletter</strong> and stay up to date with the latest news and deals!</p>
+                    </div>
+                    <div class="perk">
+                        <span class="icos ico1"></span>
+                        <p><strong>Get in touch</strong>. We’d love to hear from you. Interested in 知らせて.jp? <a href="{{site.baseurl}}/contact">Contact us</a> and we will get back to you as soon as I can. Please allow a couple days for me to respond.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 signin_box">
+                <div class="box">
+                    <div class="box_cont">
+                        <div class="social">
+                            <a href="https://www.facebook.com/shirasete.jp" class="circle facebook">
+                                <img src="{{site.baseurl}}assets/img/face.png" alt="">
+                            </a>
+                             <a href="https://twitter.com/shirasetejp" class="circle twitter">
+                                <img src="{{site.baseurl}}assets/img/twt.png" alt="">
+                            </a>
+                             <a href="https://plus.google.com/102707055965487371605" class="circle gplus">
+                                <img src="{{site.baseurl}}assets/img/gplus.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="division">
+                            <div class="line l"></div>
+                            <span>or</span>
+                            <div class="line r"></div>
+                        </div>
+
+                        <div class="form">
+                            <form action="http://news.georepublic.info/subscribe">
+                                <input type="text" name="email" placeholder="Email address" class="form-control" />
+                                <input type="hidden" name="name" />
+                                <input type="text" name="First" placeholder="First name" class="form-control" />
+                                <input type="text" name="Last" placeholder="Last name" class="form-control" />
+                                <input type="text" name="Company" placeholder="Company" class="form-control" />
+                                <input type="hidden" name="list" value="aH6FaxQ7AeQOKz67F8w0CQ" />
+                                <input type="hidden" name="boolean" value="true" />              
+                                <div class="forgot">
+                                    <span>Want to stop receiving our newsletter?</span>
+                                    <a href="{{site.baseurl}}newsletter/unsubscribe.html">Unsubscribe here</a>.
+                                </div>
+                                <button type="button" class="btn subscribe" data-loading-text="Loading...">Subscribe</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

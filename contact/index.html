@@ -1,27 +1,19 @@
 ---
 layout: default
-title: ニュースレター
+title: 連絡先
 ---
 
 <div id="sign_in2" style="margin-top:20px;">
     <div class="container">
         <div class="row login">
 
-            <div class="alert alert-success" style="display:none;">
-              <strong>Success!</strong> <span></span>
-            </div>
-
-            <div class="alert alert-danger" style="display:none;">
-              <strong>Warning!</strong> <span></span>
-            </div>
-
             <div class="col-sm-6 left_box">
-                <h4>ニュースレター</h4>
+                <h4>Get in touch</h4>
 
                 <div class="perk_box">
                     <div class="perk">
                         <span class="icos ico3"></span>
-                        <p><strong>Unsubscribe from our newsletter</strong> by submitting your email adress.</p>
+                        <p><a href="{{site.baseurl}}newsletter"><strong>Subscribe to our newsletter</strong></a> and stay up to date with the latest news and deals!</p>
                     </div>
                     <div class="perk">
                         <span class="icos ico2"></span>
@@ -31,7 +23,7 @@ title: ニュースレター
             </div>
 
             <div class="col-sm-6 signin_box">
-                <div class="box">
+                <div class="box box_wrapp">
                     <div class="box_cont">
                         <div class="social">
                             <a href="https://www.facebook.com/shirasete.jp" class="circle facebook">
@@ -51,18 +43,19 @@ title: ニュースレター
                             <div class="line r"></div>
                         </div>
 
-                        <div class="form">
-                            <form action="http://news.georepublic.info/unsubscribe">
-                                <input type="text" name="email" placeholder="Email address" class="form-control" />
-                                <input type="hidden" name="list" value="aH6FaxQ7AeQOKz67F8w0CQ" />
-                                <input type="hidden" name="boolean" value="true" />              
-                                <div class="forgot">
-                                    <span>Want to receive our newsletter?</span>
-                                    <a href="{{site.baseurl}}newsletter">Subscribe here</a>.
-                                </div>
-                                <button type="button" class="btn subscribe" data-loading-text="Loading...">Unsubscribe</button>
-                            </form>
-                        </div>
+                        <ul class="street">
+                            <li>2301 East Lamar Blvd. Suite 140.</li>
+                            <li>City, Arlington. United States,</li>
+                            <li>Zip Code, TX 76006.</li>
+                            <li class="icon icontop">
+                                <span class="contacticos ico1"></span>
+                                <span class="text">1 817 274 2933</span>
+                            </li>
+                            <li class="icon">
+                                <span class="contacticos ico2"></span>
+                                <a class="text" href="#">bootstrap@twitter.com</a>
+                            </li>
+                        </ul>
 
                     </div>
                 </div>
@@ -70,3 +63,4 @@ title: ニュースレター
         </div>
     </div>
 </div>
+

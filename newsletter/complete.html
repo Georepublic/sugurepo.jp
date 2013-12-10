@@ -1,0 +1,44 @@
+---
+layout: default
+title: Newsletter
+---
+
+<div id="reset_pwd" class="reset_page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 box_wrapper">
+                <div class="col-md-12">
+
+                    <div class="alert alert-success" style="display:none;">
+                      <strong>Success!</strong> <span></span>
+                    </div>
+
+                    <div class="alert alert-danger" style="display:none;">
+                      <strong>Warning!</strong> <span></span>
+                    </div>
+
+                    <div class="box">
+                        <div class="head">
+                            <h4>We would be glad to know more about you.</h4>
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="form">
+                            <form action="http://news.georepublic.info/subscribe">
+                                <input type="text" name="email" placeholder="Email address" readonly />
+                                <input type="hidden" name="name" />
+                                <input type="text" name="First" placeholder="First name" />
+                                <input type="text" name="Last" placeholder="Last name" />
+                                <input type="text" name="Company" placeholder="Company" />
+                                <input type="hidden" name="list" value="aH6FaxQ7AeQOKz67F8w0CQ" />
+                                <input type="hidden" name="boolean" value="true" />              
+                                <input type="button" class="subscribe" value="Update Profile" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <p class="already">Not subscribed yet? Subscribe to the <a href="{{site.baseurl}}newsletter">知らせて.jp Newsletter?</a></p>
+            </div>
+        </div>
+    </div>
+</div>
