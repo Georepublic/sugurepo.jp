@@ -4,59 +4,82 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
     <title>{{ site.name }} | {{ page.title }}</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/bootstrap-overrides.css" />
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/theme.css" />
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.name }} - {{ page.title }}">
+    <meta name="author" content="Georepublic">
 
-    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' />
-    <link rel="icon" type="image/png" href="{{site.baseurl}}assets/img/favicon.png">
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/headers/header1.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/responsive.css">
+    <link rel="shortcut icon" href="{{site.baseurl}}assets/img/favicon.png">        
+    <!-- CSS Implementing Plugins -->    
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/plugins/flexslider/flexslider.css"> 
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/plugins/bxslider/jquery.bxslider.css">    
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/plugins/layer_slider/css/layerslider.css">
+    <!-- CSS Theme -->    
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/themes/default.css">    
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/themes/headers/default.css">   
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/plugins/layer_slider/skins/fullwidth/skin.css"> 
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/themes/custom.css">    
+</head> 
 
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/index.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/about.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/backgrounds.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/blog.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/blogpost.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/coming-soon.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/contact.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/features.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/portfolio-item.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/portfolio.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/pricing.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/reset.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/services.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/sign-in.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/compiled/sign-up.css" media="screen" />  
+<body>
+<!--=== Top ===-->  
+{% include top.html %}
+<!--=== End Top ===-->    
 
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/lib/animate.css" media="screen, projection" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/lib/flexslider.css" media="screen, projection" />  
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/lib/isotope.css" media="screen, projection" />    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/custom.css" media="screen, projection" />    
+<!--=== Header ===-->    
+{% include header.html %}
+<!--=== End Header ===-->    
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
-<body class="pull_top">
-    
-    {% include navbar.html %}
+<!--=== Content Part ===-->
+{{content}}
+<!-- End Content Part -->
 
-    {{content}}
+<!--=== Footer ===-->
+{% include footer.html %}
+<!--=== End Footer ===-->
 
-    {% include footer.html %}
+<!--=== Copyright ===-->
+{% include copyright.html %}
+<!--=== End Copyright ===-->
 
-    <!-- Scripts -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="{{site.baseurl}}assets/js/jquery.countdown.min.js"></script>
-    <script type="text/javascript" src="{{site.baseurl}}assets/js/jquery.isotope.min.js"></script>
-    <script type="text/javascript" src="{{site.baseurl}}assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="{{site.baseurl}}assets/js/theme.js"></script>
+<!-- JS Global Compulsory -->     
+<script type="text/javascript" src="{{site.baseurl}}assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="{{site.baseurl}}assets/plugins/hover-dropdown.min.js"></script> 
+<script type="text/javascript" src="{{site.baseurl}}assets/plugins/back-to-top.js"></script>
+<!-- JS Implementing Plugins -->           
+<script type="text/javascript" src="{{site.baseurl}}assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}assets/plugins/bxslider/jquery.bxslider.js"></script>
+<!-- Layer Slider -->
+<script type="text/javascript" src="{{site.baseurl}}assets/plugins/layer_slider/jQuery/jquery-easing-1.3.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}assets/plugins/layer_slider/jQuery/jquery-transit-modified.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}assets/plugins/layer_slider/js/layerslider.transitions.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}assets/plugins/layer_slider/js/layerslider.kreaturamedia.jquery.js"></script>
+<!-- JS Page Level -->           
+<script type="text/javascript" src="{{site.baseurl}}assets/js/app.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}assets/js/pages/index.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        App.initSliders();
+        App.initBxSlider();
+        Index.initLayerSlider();
+    });
+</script>
+<script type="text/javascript" src="{{site.baseurl}}assets/js/custom.js"></script>
+<!--[if lt IE 9]>
+    <script src="{{site.baseurl}}assets/plugins/respond.js"></script>
+<![endif]-->
 
-    <script type="text/javascript" src="{{site.baseurl}}assets/js/index-slider.js"></script> 
-    <script type="text/javascript" src="{{site.baseurl}}assets/js/flexslider.js"></script> 
-    <script type="text/javascript" src="{{site.baseurl}}assets/js/custom.js"></script> 
 </body>
-</html>
+</html> 
+

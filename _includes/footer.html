@@ -1,59 +1,20 @@
-<!-- starts footer -->
-<footer id="footer">
+<div class="footer">
     <div class="container">
-        <div class="row info">
-            <div class="col-sm-6 residence">
-                <ul>
-                    <li><strong>合同会社 Georepublic Japan</strong></li>
-                    <li>〒151-0071 東京都渋谷区本町3-24-14</li>
-                    <li><strong>eMail:</strong> <a href="mailto:info@georepublic.co.jp">info@georepublic.co.jp</a></li>
-                    <li><strong>Tel.:</strong> +81 (03) 4578 9352</li>
-                </ul>
+        <div class="row">
+            <div class="col-md-4 md-margin-bottom-40">
+                <!-- Monthly Newsletter -->
+                {% include footer/newsletter.html %}
             </div>
-            <div class="col-sm-5 touch">
-                <ul>
-                    <li><strong>Subscribe to our newsletter</strong></li>
-                    <li style="margin-top:10px;">
-                        <form action="http://news.georepublic.info/subscribe">
-                            <input type="hidden" name="list" value="aH6FaxQ7AeQOKz67F8w0CQ">
-                            <input type="hidden" name="boolean" value="true">              
 
-                            <div class="input-group">
-                                <input type="email" name="email" class="form-control" placeholder="Email Address">
-                                <span class="input-group-btn">
-                                    <button class="btn subscribe" type="button">Subscribe</button>
-                                </span>
-                            </div>
-                        </form>                        
-                    </li>
-                </ul>
+            <div class="col-md-4 md-margin-bottom-40">
+                <!-- Stay Connected -->
+                {% include footer/social.html %}
             </div>
-        </div>
 
-        <div class="row credits">
-            <div class="col-md-12">
-                <div class="row social">
-                    <div class="col-md-12">
-                        <a href="https://www.facebook.com/shirasete.jp" class="facebook">
-                            <span class="socialicons ico1"></span>
-                            <span class="socialicons_h ico1h"></span>
-                        </a>
-                        <a href="https://twitter.com/shirasetejp" class="twitter">
-                            <span class="socialicons ico2"></span>
-                            <span class="socialicons_h ico2h"></span>
-                        </a>
-                        <a href="https://plus.google.com/102707055965487371605" rel="publisher" class="gplus">
-                            <span class="socialicons ico3"></span>
-                            <span class="socialicons_h ico3h"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="row copyright">
-                    <div class="col-md-12">
-                        © 2014 <a href="http://georepublic.info">Georepublic</a>. All rights reserved.
-                    </div>
-                </div>
-            </div>            
+            <div class="col-md-4 md-margin-bottom-40">
+                <!-- Contact Details -->
+                {% include footer/contact.html %}
+            </div>
         </div>
     </div>
-</footer>
+</div>

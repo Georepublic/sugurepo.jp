@@ -1,0 +1,10 @@
+
+.navbar > .container {
+	margin-top: 15px;
+}
+
+.navbar .navbar-brand strong {
+	font-size: 30px;
+	vertical-align: middle;
+}
+

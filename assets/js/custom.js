@@ -11,12 +11,12 @@ GRP = {};
 jQuery(document).ready(function() {
 
 	if($.getUrlVar('status') == 'success') {
-		$('.alert-success > span').html($.getUrlVar('message'));
+		$('.alert-success > span').html(message[$.getUrlVar('msg')]);
 		$('.alert-success').show();
 	}
 
 	if($.getUrlVar('status') == 'error') {
-		$('.alert-danger > span').html($.getUrlVar('message'));
+		$('.alert-danger > span').html(message[$.getUrlVar('msg')]);
 		$('.alert-danger').show();
 	}
 
@@ -24,83 +24,57 @@ jQuery(document).ready(function() {
 		$("input[name='email']").val($.getUrlVar('email'));
 	}
 
-	$('button.subscribe, input.subscribe').bind('click', function (evt) {
+	$('button.sendy').bind('click', function (evt) {
 
 		var form = $(this.form);
-		$('.subscribe').button('loading');
+		var btn = $(this);
+		btn.button('loading');
 
-		$("input[name='name']",form).val(
-			$("input[name='First']",form).val() + ' ' + $("input[name='Last']",form).val()
-		);
+		var name = [];
+		name.push($("input[name='Last']",form).val());
+		name.push($("input[name='First']",form).val());
+		$("input[name='name']",form).val(name.join(' '));
 
 		$.post(
 			form[0].action, 
 			form.serialize(), 
 			function (response) {
 				$('.alert').hide();
-				$('.subscribe').button('reset');
+				btn.button('reset');
+
 				if (true) {
 					switch (response) {
 						case 'Some fields are missing.':
-							$('.alert-danger > span').html("Some fields are missing.");
+							$('.alert-danger > span').html(message.a);
 							$('.alert-danger').show();
 							break;
 
 						case 'Invalid email address.':
-							$('.alert-danger > span').html("Invalid email address.");
+							$('.alert-danger > span').html(message.b);
 							$('.alert-danger').show();
 							break;
 
 						case 'Already subscribed.':
-							$('.alert-success > span').html("Thank you. Your 知らせて.jp Newsletter profile has been updated.");
+							$('.alert-success > span').html(message.e);
 							$('.alert-success').show();
 							break;
 
 						default:
-							$('.alert-success > span').html("You have been unsubscribed from the 知らせて.jp Newsletter.");
+							if (form[0].action.split('/').pop() == 'subscribe') {
+								$('.alert-success > span').html(message.d);
+							}
+							else {
+								$('.alert-success > span').html(message.f);
+							}
+
 							$('.alert-success').show();
 							break;
 					}
 				}
 				else {
-					$('.alert-danger > span').html("Sorry, unable to subscribe. Please try again later!");
+					$('.alert-danger > span').html(message.c);
 					$('.alert-danger').show();
-				}			
-			}
-		);
-	});
-
-	$('button.unsubscribe, input.unsubscribe').bind('click', function (evt) {
-		var form = $(this.form);
-		$('.subscribe').button('loading');
-		$.post(
-			form.action, 
-			form.serialize(), 
-			function (response) {
-				$('.alert').hide();
-				$('.subscribe').button('reset');
-				if (true) {
-					switch (response) {
-						case 'Some fields are missing.':
-							$('.alert-danger > span').html("Some fields are missing.");
-							$('.alert-danger').show();
-							break;
-
-						case 'Invalid email address.':
-							$('.alert-danger > span').html("Invalid email address.");
-							$('.alert-danger').show();
-							break;
-
-						default:
-							$('.alert-success > span').html("You have been unsubscribed from the 知らせて.jp Newsletter.");
-							$('.alert-success').show();
-							break;
-					}
 				}
-				else {
-					$('.alert-danger > span').html("Sorry, unable to subscribe. Please try again later!");
-					$('.alert-danger').show();
-				}			
 			}
 		);
 	});
