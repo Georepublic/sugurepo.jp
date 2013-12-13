@@ -5,4 +5,7 @@ relative_permalinks: false
 # Prose settings
 prose:
   rooturl: '_posts'
+  siteurl: "http://info.shirasete.georepublic.net"
+  relativeLinks: 'http://info.shirasete.georepublic.net/links.jsonp'
+  media: "media"
 
