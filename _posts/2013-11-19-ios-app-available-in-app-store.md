@@ -1,4 +1,6 @@
 ---
+layout: post
+title: iOS App available in App Store
 published: true
 ---
 
