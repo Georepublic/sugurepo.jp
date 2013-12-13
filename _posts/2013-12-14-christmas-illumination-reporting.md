@@ -4,9 +4,9 @@ title: Christmas Illumination Reporting
 published: true
 ---
 
-![LogoGreen.png](/media/LogoGreen.png)
 ## 「知らせて.jp」は、
 
+![LogoGreen.png](/media/LogoGreen.png)
 
 市民と行政の為のコラボレーション環境で、街に関するレポートをスマートフォンやウェブサイトから簡単に投稿・共有ができるサービスです。
 - 知らせて.jpを使うことで、
