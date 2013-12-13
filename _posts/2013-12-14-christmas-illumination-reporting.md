@@ -4,6 +4,7 @@ title: Christmas Illumination Reporting
 published: true
 ---
 
+![LogoGreen.png](/media/LogoGreen.png)
 ## 「知らせて.jp」は、
 
 
@@ -13,5 +14,3 @@ published: true
 - 地域の協同作業を促進します
 - 街のメンテナンスのワークフローを最適化します
 - 街の状態の透明性と可視性を高めます
-
-
