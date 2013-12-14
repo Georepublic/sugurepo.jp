@@ -1,6 +1,9 @@
 name: 知らせて.jp
-permalink: /:categories/:title
+permalink: /news/:year/:month/:title
 relative_permalinks: false
+
+paginate: 5
+paginate_path: "news/page/:num"
 
 # Prose settings
 prose:

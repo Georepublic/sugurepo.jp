@@ -1,12 +1,14 @@
-<div class="breadcrumbs margin-bottom-40">
+<div class="breadcrumbs margin-bottom-20">
     <div class="container">
         <h1 class="pull-left">{{page.title}}</h1>
-        <!-- <ul class="pull-right breadcrumb">
-            <li><a href="{{site.baseurl}}{{page.lang}}">{{site.data.i18n.breadcrumbs.home[page.lang]}}</a></li>
-            {% for category in page.categories %}
-            	<li><a href="{{site.baseurl}}{{page.lang}}/{{category}}">{{site.data.i18n.navigation[category][page.lang]}}</a></li>
-            {% endfor %}
-            <li class="active">{{page.title}}</li>
-        </ul> -->
+
+        {% case include.parent %}
+        {% when 'news' %}
+        <ul class="pull-right breadcrumb">
+            <li><a href="{{site.baseurl}}">ホーム</a></li>
+            <li><a href="{{site.baseurl}}news">ニュース</a></li>
+        </ul>
+        {% else %}
+        {% endcase %}
     </div>
 </div><!--/breadcrumbs-->

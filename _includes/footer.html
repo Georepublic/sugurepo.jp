@@ -2,18 +2,24 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 md-margin-bottom-40">
+                <!-- About -->
+                {% include footer/about.html %}
+
                 <!-- Monthly Newsletter -->
                 {% include footer/newsletter.html %}
             </div>
 
             <div class="col-md-4 md-margin-bottom-40">
-                <!-- Stay Connected -->
-                {% include footer/social.html %}
+                <!-- Latest News -->
+                {% include footer/latest.html %}
             </div>
 
             <div class="col-md-4 md-margin-bottom-40">
                 <!-- Contact Details -->
                 {% include footer/contact.html %}
+
+                <!-- Stay Connected -->
+                {% include footer/social.html %}
             </div>
         </div>
     </div>

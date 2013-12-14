@@ -1,7 +1,10 @@
 ---
 layout: post
 title: Christmas Illumination Reporting
+date: 2013-12-14 12:00:00
+author: Team 知らせて.jp
 published: true
+tags: [Event, Reporting Party, Community]
 ---
 
 ## 「知らせて.jp」は、
