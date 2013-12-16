@@ -12,3 +12,13 @@
 	vertical-align: middle;
 }
 
+/*Getting Started*/
+.service .get-started-icon {
+	font-size: 145px;  
+	margin-right: 30px;
+}
+
+.service:hover .list-inline i {
+	color: #ffffff;
+}
+

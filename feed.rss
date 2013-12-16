@@ -1,7 +1,7 @@
 ---
 origin: /
 title: 知らせて.jp News
-description: 知らせて.jp Latest News
+description: 知らせて.jp News Feed
 ---
 
 <?xml version='1.0' encoding='utf-8' ?>
@@ -10,7 +10,7 @@ description: 知らせて.jp Latest News
   <title>{{page.title}}</title>
   <link>{{site.baseurl}}</link>
   <description>{{page.description}}</description>
-  <language>en</language>
+  <language>ja</language>
   {% for item in site.categories.blog limit:40 %}{% include rss-item.xml %}{% endfor %}
 </channel>
 </rss>
