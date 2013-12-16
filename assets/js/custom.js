@@ -57,6 +57,7 @@ jQuery(document).ready(function() {
 						case 'Already subscribed.':
 							$('.alert-success > span').html(message.e);
 							$('.alert-success').show();
+							form[0].reset();
 							break;
 
 						default:
@@ -68,6 +69,7 @@ jQuery(document).ready(function() {
 							}
 
 							$('.alert-success').show();
+							form[0].reset();
 							break;
 					}
 				}
@@ -75,6 +77,8 @@ jQuery(document).ready(function() {
 					$('.alert-danger > span').html(message.c);
 					$('.alert-danger').show();
 				}
+
+				window.scrollTo(0,0);
 			}
 		);
 	});

@@ -10,7 +10,7 @@
 
 <p>Want to stop receiving our newsletter?<br> Click <a class="color-green" href="{{site.baseurl}}news/unsubscribe.html">here</a> to unsubscribe.</p>
 
-<form action="{{site.data.links.newsletter.subscribe}}">
+<form action="{{site.data.links.newsletter.subscribe}}" onkeypress="return event.keyCode != 13;">
     <div class="input-group margin-bottom-20">
         <span class="input-group-addon"><i class="icon-envelope"></i></span>
         <input type="text" class="form-control" name="email" placeholder="メールアドレス">

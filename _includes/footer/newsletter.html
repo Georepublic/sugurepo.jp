@@ -1,6 +1,6 @@
 <div class="headline"><h2>ニュースレター</h2></div> 
 <p>ニュースレターを購読し、最新のニュースやお得な情報を最新の状態に滞在！</p>
-<form class="footer-subscribe" action="{{site.data.links.newsletter.subscribe}}">
+<form class="footer-subscribe" action="{{site.data.links.newsletter.subscribe}}" onkeypress="return event.keyCode != 13;">
     <input type="hidden" name="list" value="{{site.data.links.newsletter.apikey}}">
     <input type="hidden" name="boolean" value="true">                        
     <input type="hidden" name="name" value="">                        

@@ -10,7 +10,7 @@
 
 <p><a class="color-green" href="{{site.baseurl}}newsletter">Subscribe to our newsletter</a> and <strong>stay up to date</strong> with the latest news and deals!</p>
 
-<form action="{{site.data.links.newsletter.unsubscribe}}">
+<form action="{{site.data.links.newsletter.unsubscribe}}" onkeypress="return event.keyCode != 13;">
     <div class="input-group margin-bottom-20">
         <span class="input-group-addon"><i class="icon-envelope"></i></span>
         <input type="text" class="form-control" name="email" placeholder="メールアドレス">
