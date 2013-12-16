@@ -1,0 +1,20 @@
+links:
+	apps:
+		redmine:  "http://beta.shirasete.jp"
+		google:   "#"
+		apple:    "https://itunes.apple.com/de/app/zhirasete.jp/id744954893"
+		html5:    "#"
+
+	social:
+		facebook: "https://www.facebook.com/shirasete.jp"
+		twitter:  "https://twitter.com/shirasetejp"
+		google:   "https://plus.google.com/+ShiraseteJpn"
+
+	newsletter:
+		apikey:      "aH6FaxQ7AeQOKz67F8w0CQ"
+		subscribe:   "http://news.georepublic.info/subscribe"
+		unsubscribe: "http://news.georepublic.info/unsubscribe"
+
+	georepublic:  
+		www:     "http://georepublic.info"
+		email:   "info@georepublic.co.jp"
