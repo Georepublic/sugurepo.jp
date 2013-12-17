@@ -10,14 +10,17 @@ GRP = {};
 
 jQuery(document).ready(function() {
 
+	$(".open-modal").bind('click focus', function () {
+		$('#modalSubscribe').modal('show');
+		$("#modalSubscribe form:not(.filter) :input:visible:enabled:first").focus();
+	});
+
 	if($.getUrlVar('status') == 'success') {
-		$('.alert-success > span').html(message[$.getUrlVar('msg')]);
-		$('.alert-success').show();
+		$('body > .container:first > div:first').prepend('<div class="alert alert-success"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>' + message[$.getUrlVar('msg')] + '</div>');
 	}
 
 	if($.getUrlVar('status') == 'error') {
-		$('.alert-danger > span').html(message[$.getUrlVar('msg')]);
-		$('.alert-danger').show();
+		$('body > .container:first > div:first').prepend('<div class="alert alert-danger"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>' + message[$.getUrlVar('msg')] + '</div>');
 	}
 
 	if($.getUrlVar('email').length > 0) {
@@ -39,46 +42,42 @@ jQuery(document).ready(function() {
 			form[0].action, 
 			form.serialize(), 
 			function (response) {
-				$('.alert').hide();
 				btn.button('reset');
 
 				if (true) {
 					switch (response) {
 						case 'Some fields are missing.':
-							$('.alert-danger > span').html(message.a);
-							$('.alert-danger').show();
+							form[0].prepend('<div class="alert alert-danger"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>' + message.a + '</div>');
 							break;
 
 						case 'Invalid email address.':
-							$('.alert-danger > span').html(message.b);
-							$('.alert-danger').show();
+							form.prepend('<div class="alert alert-danger"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>' + message.b + '</div>');
 							break;
 
 						case 'Already subscribed.':
-							$('.alert-success > span').html(message.e);
-							$('.alert-success').show();
+							$('body > .container:first > div:first').prepend('<div class="alert alert-success"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>' + message.e + '</div>');
 							form[0].reset();
+							$('#modalSubscribe').modal('hide');
+							window.scrollTo(0,0);
 							break;
 
 						default:
 							if (form[0].action.split('/').pop() == 'subscribe') {
-								$('.alert-success > span').html(message.d);
+								$('body > .container:first > div:first').prepend('<div class="alert alert-success"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>' + message.d + '</div>');
 							}
 							else {
-								$('.alert-success > span').html(message.f);
+								$('body > .container:first > div:first').prepend('<div class="alert alert-success"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>' + message.f + '</div>');
 							}
 
-							$('.alert-success').show();
 							form[0].reset();
+							$('#modalSubscribe').modal('hide');
+							window.scrollTo(0,0);
 							break;
 					}
 				}
 				else {
-					$('.alert-danger > span').html(message.c);
-					$('.alert-danger').show();
+					form[0].prepend('<div class="alert alert-danger"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>' + message.c + '</div>');
 				}
-
-				window.scrollTo(0,0);
 			}
 		);
 	});
