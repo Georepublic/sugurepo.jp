@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Christmas Illumination Map 2013 - クリスマスを探そう
-date: 2013-12-14 12:00:00
+title: "Christmas Illumination Map 2013 - クリスマスを探そう"
+date: "2013-12-15 12:00:00"
 author: Team 知らせて.jp
 published: true
-tags: [Event, 探そう]
+tags: 
+  - Announcement
 ---
-
 
 さぁ、今年もクリスマスの季節がやってきました。あなたの街の素適なクリスマスツリーやクリスマスイルミネーションをみんなでシェアしましょう！
 
-> **[Christmas Illumination Map 2013](1)** ([http:christmas2013.shirasete.jp](1))
+> **[Christmas Illumination Map 2013](1)** 
 
 <!-- Read More -->
 
