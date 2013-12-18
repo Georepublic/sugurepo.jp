@@ -37,11 +37,14 @@ prose:
           element: "text"
           value: "Team 知らせて.jp"
 
+      - name: "tags"
+        field:
+          label: "Tags"
+          element: "multiselect"
+
       - name: "published"
         field:
           label: "Published"
           element: "checkbox"
           value: true
-
-
 
