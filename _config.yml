@@ -29,7 +29,7 @@ prose:
         field:
           label: "Date"
           element: "text"
-          value: CURRENT_DATETIME
+          placeholder: "YYYY-MM-DD hh:mm:ss"
 
       - name: "author"
         field:
