@@ -37,16 +37,11 @@ prose:
           element: "text"
           value: "Team 知らせて.jp"
 
-      - name: "categories"
-        field:
-          label: "Categories"
-          element: "multiselect"
-          options: ["Announcement", "Mobile App", "Community"]
-
       - name: "tags"
         field:
           label: "Tags"
           element: "multiselect"
+          options: ["Announcement", "Mobile App", "Community"]
           alterable: true
 
       - name: "published"
