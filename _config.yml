@@ -43,9 +43,5 @@ prose:
           element: "checkbox"
           value: true
 
-      - name: "tags"
-        field:
-          label: "Tags"
-          element: "multiselect"
 
 
