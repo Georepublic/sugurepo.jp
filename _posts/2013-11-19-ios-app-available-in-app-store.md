@@ -11,5 +11,7 @@ tags:
 
 Text comes here!
 
+![LogoGreen.png](/media/LogoGreen.png)
+
 Test.
 Test.
