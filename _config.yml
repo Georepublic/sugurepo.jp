@@ -13,3 +13,33 @@ prose:
   relativeLinks: 'http://info.shirasete.georepublic.net/links.jsonp'
   media: "media"
 
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+
+      - name: "title"
+        field:
+          element: "text"
+
+      - name: "date"
+        field:
+          element: "text"
+          value: CURRENT_DATETIME
+
+      - name: "author"
+        field:
+          element: "text"
+
+      - name: "published"
+        field:
+          element: "checkbox"
+          value: true
+
+      - name: "tags"
+        field:
+          element: "multiselect"
+
+
