@@ -22,24 +22,30 @@ prose:
 
       - name: "title"
         field:
+          label: "Title"
           element: "text"
 
       - name: "date"
         field:
+          label: "Date"
           element: "text"
           value: CURRENT_DATETIME
 
       - name: "author"
         field:
+          label: "Author"
           element: "text"
+          value: "Team 知らせて.jp"
 
       - name: "published"
         field:
+          label: "Published"
           element: "checkbox"
           value: true
 
       - name: "tags"
         field:
+          label: "Tags"
           element: "multiselect"
 
 
