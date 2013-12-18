@@ -10,7 +10,7 @@ tags:
 
 さぁ、今年もクリスマスの季節がやってきました。あなたの街の素適なクリスマスツリーやクリスマスイルミネーションをみんなでシェアしましょう！
 
-> **[Christmas Illumination Map 2013](1)** 
+> **[Christmas Illumination Map 2013][1]** 
 
 <!-- Read More -->
 
