@@ -1,7 +1,7 @@
 name: 知らせて.jp
 permalink: /news/:year/:month/:title
 relative_permalinks: false
-excerpt_separator: "<!-- Read More -->"
+excerpt_separator: "<!-- more -->"
 
 paginate: 5
 paginate_path: "news/page/:num"

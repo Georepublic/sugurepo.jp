@@ -12,7 +12,7 @@ tags:
 
 > **[Christmas Illumination Map 2013][1]** 
 
-<!-- Read More -->
+<!-- more -->
 
 ### 投稿しよう
 
