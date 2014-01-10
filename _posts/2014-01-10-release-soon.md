@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Release soon!"
 author: Team 知らせて.jp
-date: "2014-01-01 12:00:00"
+date: "2014-01-10 12:00:00"
 tags: 
   - Announcement
 ---
