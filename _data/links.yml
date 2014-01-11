@@ -1,7 +1,7 @@
 apps:
   redmine: "http://beta.shirasete.jp"
   google: "#"
-  apple: "https://itunes.apple.com/de/app/zhirasete.jp/id744954893"
+  apple: "https://itunes.apple.com/app/zhirasete.jp/id744954893"
   html5: "#"
 
 social:
