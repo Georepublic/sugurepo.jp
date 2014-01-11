@@ -8,7 +8,7 @@ description: 知らせて.jp News Feed
 <rss version='2.0' xml:base='{{page.url}}' xmlns:dc='http://purl.org/dc/elements/1.1/'>
 <channel>
 	<title>{{page.title}}</title>
-	<link>{{site.baseurl}}</link>
+	<link>{{site.rss.baseurl}}</link>
 	<description>{{page.description}}</description>
 	<language>ja</language>
 	{% for item in site.posts limit:40 %}

@@ -1,4 +1,5 @@
 name: 知らせて.jp
+baseurl: /
 permalink: /news/:year/:month/:title
 relative_permalinks: false
 excerpt_separator: "<!-- more -->"
@@ -6,11 +7,14 @@ excerpt_separator: "<!-- more -->"
 paginate: 5
 paginate_path: "news/page/:num"
 
+rss:
+  baseurl: http://shirasete.jp
+
 # Prose settings
 prose:
   rooturl: '_posts'
-  siteurl: "http://info.shirasete.georepublic.net"
-  relativeLinks: 'http://info.shirasete.georepublic.net/links.jsonp'
+  siteurl: "http://shirasete.jp"
+  relativeLinks: 'http://shirasete.jp/links.jsonp'
   media: "media"
 
   metadata:
