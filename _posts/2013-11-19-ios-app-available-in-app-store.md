@@ -11,4 +11,10 @@ tags:
 
 無料で使えます。ぜひお試しください！
 
+
+
+> **[iOS版 知らせて.jp][1]** 
+
 ![LogoGreen.png](/media/LogoGreen.png)
+
+[1]: https://itunes.apple.com/app/zhirasete.jp/id744954893
