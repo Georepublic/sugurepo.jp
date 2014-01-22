@@ -17,4 +17,4 @@ tags:
 
 ![LogoGreen.png](/media/LogoGreen.png)
 
-[1]: https://itunes.apple.com/app/zhirasete.jp/id744954893
+[1]: https://itunes.apple.com/us/app/zhirasete.jp/id744954893
