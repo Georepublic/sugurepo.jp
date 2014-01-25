@@ -39,7 +39,7 @@ prose:
         field:
           label: "Author"
           element: "text"
-          value: "Team 知らせて.jp"
+          value: "Team すぐレポ"
 
       - name: "tags"
         field:

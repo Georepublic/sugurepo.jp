@@ -2,7 +2,7 @@
 layout: post
 title: "Christmas Illumination Map 2013 - クリスマスを探そう"
 date: "2013-12-15 12:00:00"
-author: Team 知らせて.jp
+author: Team すぐレポ
 published: true
 tags: 
   - Announcement
