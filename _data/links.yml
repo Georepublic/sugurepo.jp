@@ -1,16 +1,16 @@
 apps:
-  redmine: "http://beta.shirasete.jp"
+  redmine: "http://beta.sugurepo.jp"
   google: "#"
-  apple: "https://itunes.apple.com/app/zhirasete.jp/id744954893"
+  apple: "#"
   html5: "#"
 
 social:
-  facebook: "https://www.facebook.com/shirasete.jp"
-  twitter: "https://twitter.com/shirasetejp"
-  google: "https://plus.google.com/+ShiraseteJpn"
+  facebook: "https://www.facebook.com/pages/すぐレポ/215611405229469"
+  twitter: "https://twitter.com/sugurepo"
+  google: "https://plus.google.com/+SugurepoJpn"
 
 newsletter:
-  apikey: "aH6FaxQ7AeQOKz67F8w0CQ"
+  apikey: "4KQvLPWJV2tCLQCRWJiBCQ"
   subscribe: "http://news.georepublic.info/subscribe"
   unsubscribe: "http://news.georepublic.info/unsubscribe"
 
