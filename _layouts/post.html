@@ -6,7 +6,7 @@ layout: default
 {% include breadcrumbs.html parent="news" %}
 <!--=== End Breadcrumbs ===-->
 
-<div class="container">		
+<div class="container content">		
 	<div id="top" class="row-fluid blog-page blog-item {{page.slug}}">
 
 		<div class="blog margin-bottom-40">
@@ -25,7 +25,7 @@ layout: default
 		            <li>
 					    <ul class="list-unstyled list-inline blog-tags">
 					        <li>
-					            <i class="icon-tags"></i> 
+					            <i class="icon-tag"></i> 
 					            {% for tag in page.tags %}
 						            <a href="#">{{ tag }}</a> 
 					            {% endfor %}

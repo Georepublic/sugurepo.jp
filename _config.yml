@@ -1,5 +1,6 @@
 name: すぐレポ
 baseurl: /
+imgurl: /assets/sugurepo
 permalink: /news/:year/:month/:title
 relative_permalinks: false
 excerpt_separator: "<!-- more -->"
